@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Analyser - Optimize Your Resume Instantly</title>
+    <!-- Include Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Optional: Add custom base styles or font imports here */
+        /* Example: @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap'); */
+        /* body { font-family: 'Inter', sans-serif; } */
+    </style>
+    <script>
+        // Optional: Configure Tailwind theme extensions if needed
+        // tailwind.config = {
+        //   theme: {
+        //     extend: {
+        //       colors: {
+        //         primary: '#4f46e5', // Example primary color (Indigo 600)
+        //       }
+        //     }
+        //   }
+        // }
+      </script>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+
+    <!-- Header / Nav (Simple Placeholder) -->
+    <header class="bg-white shadow-sm">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <!-- Placeholder for Logo -->
+                    <span class="text-2xl font-bold text-indigo-600">AI Resume Analyser</span>
+                    <span class="ml-2 text-xs font-semibold text-gray-500">by Team Delta</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#features" class="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Features</a>
+                        <a href="#how-it-works" class="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">How It Works</a>
+                        <a href="#pricing" class="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Pricing (Soon)</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <!-- Mobile menu button (functional implementation needed if required) -->
+                    <button type="button" class="bg-gray-100 inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <!-- Icon when menu is closed. -->
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                        <!-- Icon when menu is open. -->
+                        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-b from-white to-gray-50 pt-20 pb-24 sm:pt-28 sm:pb-32 text-center">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 tracking-tight">
+                    Optimize Your Resume with AI.
+                    <span class="block text-indigo-600">Get Hired Faster.</span>
+                </h1>
+                <p class="mt-6 text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
+                    Stop guessing what recruiters want. Upload your resume and get instant, actionable feedback powered by Explainable AI. Tailor your resume, identify skill gaps, and boost your interview chances.
+                </p>
+                <div class="mt-10">
+                    <!-- The main Call to Action -->
+                    <a href="#upload-section" class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-semibold rounded-lg shadow-md text-white bg-indigo-600 hover:bg-indigo-700 transition duration-150 ease-in-out">
+                        Analyze Your Resume - It's Free!
+                        <svg class="ml-3 -mr-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 8.25H7.5a2.25 2.25 0 00-2.25 2.25v9a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25H15m0-3l-3-3m0 0l-3 3m3-3V15" />
+                          </svg>                          
+                    </a>
+                </div>
+                <p class="mt-4 text-sm text-gray-500">Powered by Team Delta</p>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="py-16 sm:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                        How It Works
+                    </h2>
+                    <p class="mt-4 text-lg text-gray-600">Get personalized feedback in 3 simple steps.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <!-- Step 1 -->
+                    <div class="text-center p-6 border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-100 text-indigo-600 mx-auto mb-4">
+                            <!-- Placeholder Icon: Upload -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900">1. Upload Resume</h3>
+                        <p class="mt-2 text-base text-gray-600">Securely upload your current resume (PDF or DOCX).</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="text-center p-6 border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-100 text-indigo-600 mx-auto mb-4">
+                             <!-- Placeholder Icon: AI/Processing -->
+                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                              </svg>                              
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900">2. AI Parsing & Analysis</h3>
+                        <p class="mt-2 text-base text-gray-600">Our AI extracts key info, checks keyword alignment, clarity, and identifies missing skills.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="text-center p-6 border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-100 text-indigo-600 mx-auto mb-4">
+                            <!-- Placeholder Icon: Feedback/Report -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900">3. Get Actionable Insights</h3>
+                        <p class="mt-2 text-base text-gray-600">Receive transparent feedback, skill gap analysis, and tailored suggestions to improve.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- Features Section -->
+         <section id="features" class="py-16 sm:py-24 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="lg:text-center">
+                    <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Why Choose Us?</h2>
+                    <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                        Go Beyond Basic Resume Checks
+                    </p>
+                    <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                        Our platform offers comprehensive guidance to navigate your job search effectively.
+                    </p>
+                </div>
+
+                <div class="mt-10">
+                    <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+                        <div class="relative">
+                            <dt>
+                                <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                    <!-- Placeholder Icon: Lightbulb/Idea -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.355a15.07 15.07 0 01-4.5 0m.75 1.405a1.125 1.125 0 01-1.5 0m1.5 0a1.125 1.125 0 00-1.5 0m7.5-8.175a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0zM12 2.25a8.967 8.967 0 018.212 5.327A8.967 8.967 0 0112 21.75a8.967 8.967 0 01-8.212-14.173A8.967 8.967 0 0112 2.25z" />
+                                    </svg>
+                                </div>
+                                <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Explainable AI Feedback</p>
+                            </dt>
+                            <dd class="mt-2 ml-16 text-base text-gray-500">
+                                Understand *why* changes are suggested with transparent, step-by-step explanations. No more black boxes.
+                            </dd>
+                        </div>
+
+                        <div class="relative">
+                            <dt>
+                                <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                     <!-- Placeholder Icon: Target/Goal -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zm-7.518-.267A8.25 8.25 0 1120.25 10.5M8.288 14.212A5.25 5.25 0 1117.25 10.5" />
+                                      </svg>
+                                </div>
+                                <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Skill Gap Analysis</p>
+                            </dt>
+                            <dd class="mt-2 ml-16 text-base text-gray-500">
+                                Map your skills against target roles and discover what you need to learn. Get suggestions for relevant training paths.
+                            </dd>
+                        </div>
+
+                        <div class="relative">
+                            <dt>
+                                <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                    <!-- Placeholder Icon: Document/Text -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                                    </svg>
+                                </div>
+                                <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Targeted Resume Tailoring</p>
+                            </dt>
+                            <dd class="mt-2 ml-16 text-base text-gray-500">
+                                Get specific recommendations on keywords, phrasing, and metrics to add for the roles you're applying for. Increase response rates.
+                            </dd>
+                        </div>
+
+                        <div class="relative">
+                            <dt>
+                                <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                    <!-- Placeholder Icon: Users/Coaching -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.94-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.06 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zM12 12.75a2.25 2.25 0 110-4.5 2.25 2.25 0 010 4.5z" />
+                                    </svg>
+                                </div>
+                                <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Personalized Career Coaching (Coming Soon)</p>
+                            </dt>
+                            <dd class="mt-2 ml-16 text-base text-gray-500">
+                                Access optional advanced coaching features, including interview preparation tips and personalized mentorship options.
+                            </dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <!-- Placeholder for Upload Section (Would need JS for functionality) -->
+        <section id="upload-section" class="py-16 sm:py-24 bg-white">
+            <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    Ready to Improve Your Resume?
+                </h2>
+                <p class="mt-4 text-lg text-gray-600">Upload your resume now to get started with your free AI analysis.</p>
+                <div class="mt-8 border-2 border-dashed border-gray-300 rounded-lg p-12 text-center hover:border-indigo-400 cursor-pointer transition">
+                    <!-- This would be replaced by a file input or drag-and-drop component -->
+                    <svg class="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48" aria-hidden="true">
+                        <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <span class="mt-2 block text-sm font-medium text-gray-900">
+                        Drag & Drop your resume here
+                    </span>
+                    <span class="text-xs text-gray-500">or</span>
+                    <button type="button" class="mt-2 font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:underline transition duration-150 ease-in-out">
+                        Select a file
+                    </button>
+                    <p class="text-xs text-gray-500 mt-1">PDF, DOC, DOCX up to 10MB</p>
+                </div>
+                 <!-- Note: Actual upload requires backend & JS -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
+             <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
+                <div class="px-5 py-2">
+                  <a href="#" class="text-base text-gray-400 hover:text-gray-300">About</a>
+                </div>
+                <div class="px-5 py-2">
+                  <a href="#" class="text-base text-gray-400 hover:text-gray-300">Contact</a>
+                </div>
+                <div class="px-5 py-2">
+                  <a href="#" class="text-base text-gray-400 hover:text-gray-300">Privacy Policy</a>
+                </div>
+                <div class="px-5 py-2">
+                  <a href="#" class="text-base text-gray-400 hover:text-gray-300">Terms of Service</a>
+                </div>
+              </nav>
+            <p class="mt-8 text-center text-base text-gray-400">
+                © 2023 Team Delta - AI Resume Analyser. All rights reserved.
+            </p>
+            <p class="mt-2 text-center text-xs text-gray-500">
+                Built with MongoDB, Express.js, React.js, Node.js
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
